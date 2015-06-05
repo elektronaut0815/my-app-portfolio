@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="button0">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:background">#2196f3</item>
+        <item name="android:textColor">@color/primary_dark_material_dark</item>
+    </style>
+
+    <style name="button1">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:background">#e3f2fd</item>
+        <item name="android:textColor">@color/primary_dark_material_dark</item>
+    </style>
+
+</resources>

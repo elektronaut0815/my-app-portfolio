@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".OverviewActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/abc_text_size_title_material"
+        android:text="@string/title" />
+
+    <Button
+        android:id="@+id/spotifyStreamerButton"
+        android:layout_below="@+id/textView"
+        style="@style/button0"
+        android:text="@string/spotify_streamer"
+        android:onClick="spotifyStreamerClicked" />
+
+    <Button
+        android:id="@+id/scoresButton"
+        android:layout_below="@+id/spotifyStreamerButton"
+        style="@style/button1"
+        android:text="@string/scores_app"
+        android:onClick="scoresClicked" />
+
+    <Button
+        android:id="@+id/libraryButton"
+        android:layout_below="@+id/scoresButton"
+        style="@style/button0"
+        android:text="@string/library_app"
+        android:onClick="libraryClicked" />
+
+    <Button
+        android:id="@+id/buildItBiggerButton"
+        android:layout_below="@+id/libraryButton"
+        style="@style/button1"
+        android:text="@string/build_it_bigger"
+        android:onClick="buildItBiggerClicked" />
+
+    <Button
+        android:id="@+id/xyzReaderButton"
+        android:layout_below="@+id/buildItBiggerButton"
+        style="@style/button0"
+        android:text="@string/xyz_reader"
+        android:onClick="xyzReaderClicked" />
+
+    <Button
+        android:id="@+id/capstoneButton"
+        android:layout_below="@+id/xyzReaderButton"
+        style="@style/button1"
+        android:text="@string/capstone"
+        android:onClick="capstoneClicked" />
+
+</RelativeLayout>
