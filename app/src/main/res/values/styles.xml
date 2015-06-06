@@ -10,6 +10,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_marginTop">25dp</item>
+        <item name="android:onClick">displayToast</item>
         <item name="android:background">#2196f3</item>
         <item name="android:textColor">@color/primary_dark_material_dark</item>
     </style>
@@ -19,6 +20,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_marginTop">25dp</item>
+        <item name="android:onClick">displayToast</item>
         <item name="android:background">#e3f2fd</item>
         <item name="android:textColor">@color/primary_dark_material_dark</item>
     </style>

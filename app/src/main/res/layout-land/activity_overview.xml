@@ -32,19 +32,16 @@
             <Button
                 android:id="@+id/spotifyStreamerButton"
                 style="@style/button0"
-                android:text="@string/spotify_streamer"
-                android:onClick="spotifyStreamerClicked" />
+                android:text="@string/spotify_streamer" />
             <Button
                 android:id="@+id/scoresButton"
                 style="@style/button1"
-                android:text="@string/scores_app"
-                android:onClick="scoresClicked" />
+                android:text="@string/scores_app" />
 
             <Button
                 android:id="@+id/libraryButton"
                 style="@style/button0"
-                android:text="@string/library_app"
-                android:onClick="libraryClicked" />
+                android:text="@string/library_app" />
 
         </LinearLayout>
         <LinearLayout
@@ -56,20 +53,17 @@
             <Button
                 android:id="@+id/buildItBiggerButton"
                 style="@style/button1"
-                android:text="@string/build_it_bigger"
-                android:onClick="buildItBiggerClicked" />
+                android:text="@string/build_it_bigger" />
 
             <Button
                 android:id="@+id/xyzReaderButton"
                 style="@style/button0"
-                android:text="@string/xyz_reader"
-                android:onClick="xyzReaderClicked" />
+                android:text="@string/xyz_reader" />
 
             <Button
                 android:id="@+id/capstoneButton"
                 style="@style/button1"
-                android:text="@string/capstone"
-                android:onClick="capstoneClicked" />
+                android:text="@string/capstone" />
 
         </LinearLayout>
 

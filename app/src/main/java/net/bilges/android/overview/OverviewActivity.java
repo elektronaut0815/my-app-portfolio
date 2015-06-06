@@ -1,16 +1,18 @@
 package net.bilges.android.overview;
 
 import android.app.Activity;
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 
 /**
- * Simple Activity which contains some button click listeners.
+ * Simple Activity which only contains a generic button click listener.
  * In the future this will be the entry point to a couple of Apps.
  */
 public class OverviewActivity extends Activity {
@@ -43,33 +45,17 @@ public class OverviewActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void spotifyStreamerClicked(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch the Spotify Streamer App",
-                Toast.LENGTH_SHORT).show();
-    }
+    /**
+     * Displays a Toast message containing the label text of the button
+     * @param view
+     */
+    public void displayToast(View view) {
 
-    public void scoresClicked(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch the Scores App",
-                Toast.LENGTH_SHORT).show();
-    }
+        Button button = (Button) view;
+        String buttonText = (String) button.getText();
+        CharSequence text = getString(R.string.open_app)
+                + buttonText;
 
-    public void libraryClicked(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch the Library App",
-                Toast.LENGTH_SHORT).show();
-    }
-
-    public void buildItBiggerClicked(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch the Build It Bigger App",
-                Toast.LENGTH_SHORT).show();
-    }
-
-    public void xyzReaderClicked(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch the XYZ Reader App",
-                Toast.LENGTH_SHORT).show();
-    }
-
-    public void capstoneClicked(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch my Capstone App",
-                Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
     }
 }
